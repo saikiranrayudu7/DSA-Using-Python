@@ -9,6 +9,10 @@ print(y)
 print(str(x) + y)
 print(str(x) + " " + y)
 
+print("Hello", "World")
+print("Hello" + "World")
+
+
 #Variable will get override
 m = 10
 m = "Sai"
@@ -32,3 +36,42 @@ A = "Sai"
 print(a)
 print(A)
 
+
+
+#Assign multiple variables
+x,y,z = 10,"Banana",20.08
+print(x)
+print(y)
+print(z)
+
+x=y=z="Orange"
+print(x)
+print(y)
+print(z)
+
+
+#Collection
+fruits = ["apple", "banana", "cherry"]
+x,y,z = fruits
+print(x)
+print(y)
+print(z)
+
+
+
+#Advanced Concept - Global Variables
+x = "awesome"
+def myfunc():
+    print("Python is " + x)
+
+myfunc()
+
+
+#Create a variable inside a function, with the same name as the global variable
+x = "awesome"
+def myfunc():
+    x = "fantastic"
+    print("Python is " + x)
+myfunc()
+
+print("Python is " + x)
